@@ -1,0 +1,12 @@
+.navbar, footer{
+    background-color: #EAEEDE;
+}
+
+/*INDEX ASIDE*/
+.informacion{
+    text-align: center;
+    
+}
+.informacion div h1{
+    padding-top: 1rem;
+}
