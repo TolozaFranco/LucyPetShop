@@ -1,7 +1,8 @@
+/*HEADER AND FOOTER COLORS*/
 .navbar, footer{
     background-color: #EAEEDE;
 }
-
+/*-----------INDEX----------*/
 /*INDEX ASIDE*/
 .informacion{
     text-align: center;
@@ -9,4 +10,15 @@
 }
 .informacion div h1{
     padding-top: 1rem;
+}
+/*---------PRODUCTOS--------*/
+#tituloproductos{
+    text-align: center;
+    padding-top: 20px;
+}
+.container{
+    padding: 20px;
+}
+#infotienda{
+    text-align: center;
 }
