@@ -1,4 +1,8 @@
 /*COLORES*/
+body {
+  max-width: 100%;
+  font-family: 'Roboto Slab', serif; }
+
 /*HEADER AND FOOTER COLORS*/
 .navbar, footer {
   background-color: #EAEEDE; }
@@ -18,7 +22,13 @@
 .container {
   padding: 20px; }
 
-#infotienda {
-  text-align: center; }
-
 /*---------CONTACTO--------*/
+/*---------VETERINARIA--------*/
+.banner {
+  background-image: url(../Images/banner_veterinaria.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 25em; }
+
+/*---------NOSOTROS--------*/
