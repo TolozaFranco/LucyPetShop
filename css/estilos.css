@@ -1,7 +1,10 @@
-/*COLORES*/
+/*Colors*/
+/*Font-Family*/
+/*Padding*/
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
 body {
-  max-width: 100%;
-  font-family: 'Roboto Slab', serif; }
+  max-width: 100%; }
 
 /*HEADER AND FOOTER COLORS*/
 .navbar, footer {
@@ -32,3 +35,8 @@ body {
   height: 25em; }
 
 /*---------NOSOTROS--------*/
+main #presentacion p {
+  color: white;
+  background-color: #852f88;
+  font-family: "Roboto Slab", serif;
+  padding: 20px; }

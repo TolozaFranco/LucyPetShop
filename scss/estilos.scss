@@ -1,9 +1,12 @@
 @import "variables";
 
+@import "./misc/normalize";
+
+@import "./misc/mixins";
+
+
 body{
     max-width: 100%;
-    font-family: 'Roboto Slab', serif;
-
 }
 /*HEADER AND FOOTER COLORS*/
 .navbar, footer{
@@ -30,6 +33,7 @@ body{
 }
 
 /*---------CONTACTO--------*/
+
 /*---------VETERINARIA--------*/
 .banner{
     background-image: url(../Images/banner_veterinaria.jpg);
@@ -39,8 +43,9 @@ body{
     height: 25em;
 }
 /*---------NOSOTROS--------*/
-.presentacion{
-    img{
-
+main{
+    #presentacion{
+        p{@include violet_text($light-color, $background-color, $font-principal, $padding-text)
+        }
     }
 }
