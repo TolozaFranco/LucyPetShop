@@ -1,6 +1,9 @@
-@mixin violet_text($light-color, $background-color, $font-principal, $padding-text){
+@mixin violet_text($light-color, $background-color, $padding-text){
     color: $light-color;
     background-color: $background-color;
-    font-family: $font-principal;
     padding: $padding-text;
+}
+@mixin orange_tittle($accent-color, $font-tittle){
+    color: $accent-color;
+    font-family: $font-tittle;
 }

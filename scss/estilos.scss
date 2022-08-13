@@ -45,7 +45,13 @@ body{
 /*---------NOSOTROS--------*/
 main{
     #presentacion{
-        p{@include violet_text($light-color, $background-color, $font-principal, $padding-text)
+        h1{
+            @include orange_tittle($accent-color, $font-tittle)
+        }
+        h3{
+            @include orange_tittle($accent-color, $font-tittle)
+        }
+        p{@include violet_text($light-color, $background-color, $padding-text)
         }
     }
 }

@@ -35,8 +35,15 @@ body {
   height: 25em; }
 
 /*---------NOSOTROS--------*/
+main #presentacion h1 {
+  color: #e27448;
+  font-family: "DynaPuff", cursive; }
+
+main #presentacion h3 {
+  color: #e27448;
+  font-family: "DynaPuff", cursive; }
+
 main #presentacion p {
   color: white;
   background-color: #852f88;
-  font-family: "Roboto Slab", serif;
   padding: 20px; }
