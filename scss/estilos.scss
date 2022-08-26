@@ -5,8 +5,12 @@
 @import "./misc/mixins";
 
 
+
+
 body{
     max-width: 100%;
+    margin: 0;
+    background-color: $background-color;
 }
 /*HEADER AND FOOTER COLORS*/
 .navbar, footer{
@@ -51,7 +55,7 @@ main{
         h3{
             @include orange_tittle($accent-color, $font-tittle)
         }
-        p{@include violet_text($light-color, $background-color, $padding-text)
+        p{@include violet_text($light-color, $secondary-color, $padding-text)
         }
     }
 }
