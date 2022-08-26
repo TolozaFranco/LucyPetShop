@@ -5,11 +5,9 @@
 @import "./misc/mixins";
 
 
-
-
 body{
-    max-width: 100%;
     margin: 0;
+    box-sizing: border-box;
     background-color: $background-color;
 }
 /*HEADER AND FOOTER COLORS*/
@@ -45,6 +43,25 @@ body{
     background-attachment: fixed;
     background-size: cover;
     height: 25em;
+    position: relative;
+    div{
+        max-height: 15em;
+        max-width: 600px;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        @include violet_text($light-color, $secondary-color, $padding-text)
+        
+    }
+}
+.Banner_Ofrecemos{
+    max-width: 95%;
+    max-height: auto;
+    @include violet_text($light-color, $secondary-color, $padding-text)
+}
+.sector_preguntas{
+    max-width: 95%;
 }
 /*---------NOSOTROS--------*/
 main{
@@ -55,7 +72,10 @@ main{
         h3{
             @include orange_tittle($accent-color, $font-tittle)
         }
-        p{@include violet_text($light-color, $secondary-color, $padding-text)
+        p{  border-radius: 10px;
+            max-width: 70%;
+            @include violet_text($light-color, $secondary-color, $padding-text)
+         
         }
     }
 }
