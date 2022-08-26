@@ -1,14 +1,26 @@
+
+
 @import "variables";
+
+@import "../scss/components/buttoms";
 
 @import "./misc/normalize";
 
 @import "./misc/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 
 body{
     margin: 0;
     box-sizing: border-box;
     background-color: $background-color;
+    h1{
+        @include orange_tittle($accent-color, $font-tittle);
+    }
+    h4{
+        @include orange_tittle($accent-color, $font-tittle);
+    }
 }
 /*HEADER AND FOOTER COLORS*/
 .navbar, footer{
@@ -45,12 +57,16 @@ body{
     height: 25em;
     position: relative;
     div{
+        h1{
+            color: $light-color;
+        }
         max-height: 15em;
         max-width: 600px;
         border-radius: 10px;
         position: absolute;
         top: 20%;
         right: 10%;
+    
         @include violet_text($light-color, $secondary-color, $padding-text)
         
     }
@@ -58,7 +74,10 @@ body{
 .Banner_Ofrecemos{
     max-width: 95%;
     max-height: auto;
-    @include violet_text($light-color, $secondary-color, $padding-text)
+    @include violet_text($light-color, $secondary-color, $padding-text);
+     h4{
+        color:$light-color;       
+    }
 }
 .sector_preguntas{
     max-width: 95%;
