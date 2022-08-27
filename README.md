@@ -9,7 +9,7 @@
 <p align="left">La página esta diseñada con el framework de Bootstrap 5, se alinearon las cosas con flexbox, CSS mediante su procesador SASS, un lenguaje de hoja de estilos en cascada. También se usaron media queries en casos especificos para así poder ir modificando la estructura de la página para diferentes resoluciones.</p>
 <h3 align="left">Capturas de pantalla:</h3>
 <h4 align="left">Dekstop:</h4>
-<a href='https://postimg.cc/NLs2ZTjd' target='_blank'><img src='https://i.postimg.cc/c1Y7gByG/screen-dekstop1.png' border='0' alt='screen-dekstop1'/></a>
+<a href='https://postimg.cc/NLs2ZTjd' target='_blank'><img src='https://i.postimg.cc/NLs2ZTjd/screen-dekstop1.png' border='0' alt='screen-dekstop1'/></a>
 [![screen-dekstop2.png](https://i.postimg.cc/Y01Q5MfC/screen-dekstop2.png)](https://postimg.cc/T53ym84z)
 [![screen-dekstop3.png](https://i.postimg.cc/wMKh47Nr/screen-dekstop3.png)](https://postimg.cc/jwXwLqZ6)
 <h4 align="left">Mobile:</h4>
