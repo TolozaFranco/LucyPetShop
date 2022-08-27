@@ -31,7 +31,17 @@ body{
     background-color: $primary-color;
 }
 /*-----------INDEX----------*/
-
+/*carousel*/
+.carousel-inner {
+    max-height: 700px;
+    .carousel-caption{
+        top: 40%;
+    }
+    img {
+    width: 100%;
+    max-height: 900px;}
+}
+/*main-area de navegacion*/
 .navegacion_area{  
     max-width: 70%;
 .box{
@@ -67,8 +77,6 @@ body{
 .container{
     padding: 20px;
 }
-
-/*---------CONTACTO--------*/
 
 /*---------VETERINARIA--------*/
 .banner{
@@ -124,6 +132,17 @@ main{
 /*media queries*/
 @media screen and (max-width:480px){
     /*-----------INDEX----------*/
+.carousel-inner {
+        max-height: 700px;
+        .carousel-caption{
+            display: block;
+            top: 30%;
+        }
+        img {
+        width: 100%;
+        max-height: 900px;}
+    }
+
     .navegacion_area{  
         max-width: 100%;
     .box{

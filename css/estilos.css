@@ -8437,6 +8437,16 @@ body {
   background-color: #eed6b8; }
 
 /*-----------INDEX----------*/
+/*carousel*/
+.carousel-inner {
+  max-height: 700px; }
+  .carousel-inner .carousel-caption {
+    top: 40%; }
+  .carousel-inner img {
+    width: 100%;
+    max-height: 900px; }
+
+/*main-area de navegacion*/
 .navegacion_area {
   max-width: 70%; }
   .navegacion_area .box {
@@ -8465,7 +8475,6 @@ body {
 .container {
   padding: 20px; }
 
-/*---------CONTACTO--------*/
 /*---------VETERINARIA--------*/
 .banner {
   background-image: url(../Images/banner_veterinaria.jpg);
@@ -8518,6 +8527,14 @@ main #presentacion p {
 /*media queries*/
 @media screen and (max-width: 480px) {
   /*-----------INDEX----------*/
+  .carousel-inner {
+    max-height: 700px; }
+    .carousel-inner .carousel-caption {
+      display: block;
+      top: 30%; }
+    .carousel-inner img {
+      width: 100%;
+      max-height: 900px; }
   .navegacion_area {
     max-width: 100%; }
     .navegacion_area .box {
