@@ -10,6 +10,10 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "./utilities/mediaqueries";
+
+
+
 
 body{
     margin: 0;
@@ -27,6 +31,24 @@ body{
     background-color: $primary-color;
 }
 /*-----------INDEX----------*/
+
+.navegacion_area{  
+    max-width: 70%;
+.box{
+    @include violet_text($light-color, $secondary-color, $padding-text);
+    img{
+        max-height: 200px;
+        float: left;
+        padding-right: 20px;
+    }
+    p{
+        font-size: 20px;
+        padding-top: 50px;
+        
+    }
+   
+}
+}
 /*INDEX ASIDE*/
 .informacion{
     text-align: center;
@@ -97,4 +119,78 @@ main{
          
         }
     }
+}
+
+/*media queries*/
+@media screen and (max-width:480px){
+    /*-----------INDEX----------*/
+    .navegacion_area{  
+        max-width: 100%;
+    .box{
+        @include violet_text($light-color, $secondary-color, $padding-text);
+        img{
+            max-height: 200px;
+            float: none;
+            padding-right: 20px;
+        }
+        p{
+            font-size: 20px;
+            padding-top: 50px;
+            
+        }
+       
+    }
+    }
+
+    /*---------VETERINARIA--------*/
+.banner{
+    background-image: url(../Images/banner_veterinaria.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+    position: relative;
+    div{
+        h1{
+            color: $light-color;
+        }
+        max-height: 20em;
+        max-width: 600px;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+        width: auto;
+        margin-left: 40px;
+    
+        @include violet_text($light-color, $secondary-color, $padding-text)
+        
+    }
+}
+.Banner_Ofrecemos{
+    max-width: 95%;
+    max-height: auto;
+    @include violet_text($light-color, $secondary-color, $padding-text);
+     h4{
+        color:$light-color;       
+    }
+}
+.sector_preguntas{
+    max-width: 95%;
+}
+/*NOSOTROS*/
+main{
+    #presentacion{
+        h1{
+            @include orange_tittle($accent-color, $font-tittle)
+        }
+        h3{
+            @include orange_tittle($accent-color, $font-tittle)
+        }
+        p{  border-radius: 10px;
+            max-width: 100%;
+            @include violet_text($light-color, $secondary-color, $padding-text)
+         
+        }
+    }
+}
 }

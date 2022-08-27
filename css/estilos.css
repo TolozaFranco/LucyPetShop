@@ -8405,6 +8405,22 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+@media screen and (max-width: 480px) {
+  /*-----------INDEX----------*/
+  .navegacion_area {
+    max-width: 100%; }
+    .navegacion_area .box {
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; }
+      .navegacion_area .box img {
+        max-height: 200px;
+        float: left;
+        padding-right: 20px; }
+      .navegacion_area .box p {
+        font-size: 20px;
+        padding-top: 50px; } }
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -8421,6 +8437,20 @@ body {
   background-color: #eed6b8; }
 
 /*-----------INDEX----------*/
+.navegacion_area {
+  max-width: 70%; }
+  .navegacion_area .box {
+    color: white;
+    background-color: #d696c3;
+    padding: 20px; }
+    .navegacion_area .box img {
+      max-height: 200px;
+      float: left;
+      padding-right: 20px; }
+    .navegacion_area .box p {
+      font-size: 20px;
+      padding-top: 50px; }
+
 /*INDEX ASIDE*/
 .informacion {
   text-align: center; }
@@ -8484,3 +8514,64 @@ main #presentacion p {
   color: white;
   background-color: #d696c3;
   padding: 20px; }
+
+/*media queries*/
+@media screen and (max-width: 480px) {
+  /*-----------INDEX----------*/
+  .navegacion_area {
+    max-width: 100%; }
+    .navegacion_area .box {
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; }
+      .navegacion_area .box img {
+        max-height: 200px;
+        float: none;
+        padding-right: 20px; }
+      .navegacion_area .box p {
+        font-size: 20px;
+        padding-top: 50px; }
+  /*---------VETERINARIA--------*/
+  .banner {
+    background-image: url(../Images/banner_veterinaria.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+    position: relative; }
+    .banner div {
+      max-height: 20em;
+      max-width: 600px;
+      border-radius: 10px;
+      position: absolute;
+      top: 20%;
+      width: auto;
+      margin-left: 40px;
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; }
+      .banner div h1, .banner div .h1 {
+        color: white; }
+  .Banner_Ofrecemos {
+    max-width: 95%;
+    max-height: auto;
+    color: white;
+    background-color: #d696c3;
+    padding: 20px; }
+    .Banner_Ofrecemos h4, .Banner_Ofrecemos .h4 {
+      color: white; }
+  .sector_preguntas {
+    max-width: 95%; }
+  /*NOSOTROS*/
+  main #presentacion h1, main #presentacion .h1 {
+    color: #e27448;
+    font-family: "DynaPuff", cursive; }
+  main #presentacion h3, main #presentacion .h3 {
+    color: #e27448;
+    font-family: "DynaPuff", cursive; }
+  main #presentacion p {
+    border-radius: 10px;
+    max-width: 100%;
+    color: white;
+    background-color: #d696c3;
+    padding: 20px; } }

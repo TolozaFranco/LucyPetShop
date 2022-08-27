@@ -1,0 +1,20 @@
+@media screen and (max-width:480px){
+    /*-----------INDEX----------*/
+    .navegacion_area{  
+        max-width: 100%;
+    .box{
+        @include violet_text($light-color, $secondary-color, $padding-text);
+        img{
+            max-height: 200px;
+            float: left;
+            padding-right: 20px;
+        }
+        p{
+            font-size: 20px;
+            padding-top: 50px;
+            
+        }
+       
+    }
+    }
+}
