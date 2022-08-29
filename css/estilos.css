@@ -8405,22 +8405,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-@media screen and (max-width: 480px) {
-  /*-----------INDEX----------*/
-  .navegacion_area {
-    max-width: 100%; }
-    .navegacion_area .box {
-      color: white;
-      background-color: #d696c3;
-      padding: 20px; }
-      .navegacion_area .box img {
-        max-height: 200px;
-        float: left;
-        padding-right: 20px; }
-      .navegacion_area .box p {
-        font-size: 20px;
-        padding-top: 50px; } }
-
 body {
   margin: 0;
   box-sizing: border-box;
@@ -8535,6 +8519,7 @@ main #presentacion p {
     .carousel-inner img {
       width: 100%;
       max-height: 900px; }
+  /*area de navegacion*/
   .navegacion_area {
     max-width: 100%; }
     .navegacion_area .box {
@@ -8547,7 +8532,7 @@ main #presentacion p {
         padding-right: 20px; }
       .navegacion_area .box p {
         font-size: 20px;
-        padding-top: 50px; }
+        padding-top: 10px; }
   /*---------VETERINARIA--------*/
   .banner {
     background-image: url(../Images/banner_veterinaria.jpg);
@@ -8580,6 +8565,60 @@ main #presentacion p {
   .sector_preguntas {
     max-width: 95%; }
   /*NOSOTROS*/
+  main .row {
+    justify-items: center; }
+    main .row #presentacion h1, main .row #presentacion .h1 {
+      color: #e27448;
+      font-family: "DynaPuff", cursive; }
+    main .row #presentacion h3, main .row #presentacion .h3 {
+      color: #e27448;
+      font-family: "DynaPuff", cursive; }
+    main .row #presentacion p {
+      border-radius: 10px;
+      max-width: 100%;
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /*------INDEX-------*/
+  /*navegacion area*/
+  .navegacion_area {
+    max-width: 70%; }
+    .navegacion_area .box {
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; }
+      .navegacion_area .box img {
+        max-height: 200px;
+        float: none;
+        padding-right: 20px; }
+      .navegacion_area .box p {
+        padding-top: 10px; }
+  /*----Veterinaria-----*/
+  /*banner*/
+  .banner {
+    background-image: url(../Images/banner_veterinaria.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+    position: relative; }
+    .banner div {
+      max-height: 20em;
+      max-width: 600px;
+      border-radius: 10px;
+      position: absolute;
+      top: 20%;
+      width: auto;
+      margin-left: 40px; }
+      .banner div h1, .banner div .h1 {
+        color: white; }
+  /*NOSOTROS*/
+  main #FotoLucy {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   main #presentacion h1, main #presentacion .h1 {
     color: #e27448;
     font-family: "DynaPuff", cursive; }
@@ -8592,3 +8631,50 @@ main #presentacion p {
     color: white;
     background-color: #d696c3;
     padding: 20px; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1087px) {
+  /*------INDEX-------*/
+  /*navegacion area*/
+  .navegacion_area {
+    max-width: 70%; }
+    .navegacion_area .box {
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; }
+      .navegacion_area .box img {
+        max-height: 200px;
+        float: none;
+        padding-right: 20px; }
+      .navegacion_area .box p {
+        padding-top: 10px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  /*------INDEX-------*/
+  /*navegacion area*/
+  .navegacion_area {
+    max-width: 70%; }
+    .navegacion_area .box {
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; }
+      .navegacion_area .box img {
+        max-height: 200px;
+        padding-right: 20px; }
+      .navegacion_area .box p {
+        padding-top: 10px; }
+  /*-----Nosotros-----*/
+  /*presentacion*/
+  main .row {
+    align-items: center; }
+    main .row #presentacion h1, main .row #presentacion .h1 {
+      color: #e27448;
+      font-family: "DynaPuff", cursive; }
+    main .row #presentacion h3, main .row #presentacion .h3 {
+      color: #e27448;
+      font-family: "DynaPuff", cursive; }
+    main .row #presentacion p {
+      border-radius: 10px;
+      max-width: 90%;
+      color: white;
+      background-color: #d696c3;
+      padding: 20px; } }

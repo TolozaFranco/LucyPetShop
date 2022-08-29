@@ -10,7 +10,6 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@import "./utilities/mediaqueries";
 
 
 
@@ -76,7 +75,9 @@ body{
 }
 .container{
     padding: 20px;
+  
 }
+
 
 /*---------VETERINARIA--------*/
 .banner{
@@ -142,10 +143,11 @@ main{
         width: 100%;
         max-height: 900px;}
     }
-
+/*area de navegacion*/
     .navegacion_area{  
         max-width: 100%;
     .box{
+
         @include violet_text($light-color, $secondary-color, $padding-text);
         img{
             max-height: 200px;
@@ -154,8 +156,8 @@ main{
         }
         p{
             font-size: 20px;
-            padding-top: 50px;
-            
+            padding-top: 10px;
+
         }
        
     }
@@ -198,6 +200,10 @@ main{
 }
 /*NOSOTROS*/
 main{
+    .row{
+        justify-items: center;
+
+    
     #presentacion{
         h1{
             @include orange_tittle($accent-color, $font-tittle)
@@ -211,5 +217,128 @@ main{
          
         }
     }
+}
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    /*------INDEX-------*/
+    /*navegacion area*/
+    .navegacion_area{  
+        max-width: 70%;
+    .box{
+        @include violet_text($light-color, $secondary-color, $padding-text);
+        img{
+            max-height: 200px;
+            float: none;
+            padding-right: 20px;
+        }
+        p{
+            padding-top: 10px;
+        }
+       }
+     }
+/*----Veterinaria-----*/
+/*banner*/
+.banner{
+    background-image: url(../Images/banner_veterinaria.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+    position: relative;
+    div{
+        h1{
+            color: $light-color;
+        }
+        max-height: 20em;
+        max-width: 600px;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+        width: auto;
+        margin-left: 40px;
+        
+    }
+
+}
+/*NOSOTROS*/
+main {
+    #FotoLucy{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #presentacion{
+        h1{
+            @include orange_tittle($accent-color, $font-tittle)
+        }
+        h3{
+            @include orange_tittle($accent-color, $font-tittle)
+        }
+        p{  border-radius: 10px;
+            max-width: 100%;
+            @include violet_text($light-color, $secondary-color, $padding-text)
+         
+        }
+    }
+}
+}
+@media only screen and (min-width: 767px) and (max-width: 1087px){
+        /*------INDEX-------*/
+    /*navegacion area*/
+    .navegacion_area{  
+        max-width: 70%;
+    .box{
+        @include violet_text($light-color, $secondary-color, $padding-text);
+        img{
+            max-height: 200px;
+            float: none;
+            padding-right: 20px;
+        }
+        p{
+            padding-top: 10px;
+        }
+       }
+     }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+            /*------INDEX-------*/
+    /*navegacion area*/
+    .navegacion_area{  
+        max-width: 70%;
+    .box{
+        @include violet_text($light-color, $secondary-color, $padding-text);
+        img{
+            max-height: 200px;
+            padding-right: 20px;
+        }
+        p{
+            padding-top: 10px;
+        }
+       }
+     }
+/*-----Nosotros-----*/
+/*presentacion*/
+main {
+    .row{
+        align-items: center;
+
+    #presentacion{
+    h1{
+        @include orange_tittle($accent-color, $font-tittle)
+    }
+    h3{
+        @include orange_tittle($accent-color, $font-tittle)
+    }
+    p{  border-radius: 10px;
+        max-width: 90%;
+        @include violet_text($light-color, $secondary-color, $padding-text)
+
+     
+    }
+}
+}
 }
 }
