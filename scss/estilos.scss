@@ -1,14 +1,17 @@
 
-
 @import "variables";
 
 @import "../scss/components/buttoms";
+
+@import "../scss/layout/header";
 
 @import "./misc/normalize";
 
 @import "./misc/mixins";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
 
 
 
@@ -69,19 +72,21 @@ body{
 }
 
 /*---------PRODUCTOS--------*/
-#tituloproductos{
-    text-align: center;
-    padding-top: 20px;
-}
+
 .container{
     padding: 20px;
   
 }
-
-
+.card{
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
 /*---------VETERINARIA--------*/
 .banner{
-    background-image: url(../Images/banner_veterinaria.jpg);
+    background-image: url(../Images/items/banner_veterinaria.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -127,6 +132,15 @@ main{
             @include violet_text($light-color, $secondary-color, $padding-text)
          
         }
+    }
+}
+/*--------CONTACTO-------*/
+.CajaContacto{
+    background-color: $primary-color ;
+    color: $light-color;
+    input{
+        color: steelgray;
+        background-color: rgb(199, 250, 220);
     }
 }
 
@@ -219,6 +233,15 @@ main{
     }
 }
 }
+}
+
+@media screen and (max-width:575px){
+    /*PRODUCTOS*/
+    #ContenedorProductos{
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px){

@@ -1,6 +1,7 @@
 /*Colors*/
 /*Font-Family*/
 /*Padding*/
+/*Bootstrap color*/
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
 /*!
@@ -8408,7 +8409,7 @@ textarea.form-control-lg {
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: #f5f5f8; }
+  background-color: #ffffff; }
   body h1, body .h1 {
     color: #e27448;
     font-family: "DynaPuff", cursive; }
@@ -8418,7 +8419,7 @@ body {
 
 /*HEADER AND FOOTER COLORS*/
 .navbar, footer {
-  background-color: #eed6b8; }
+  background-color: #0dd1a0; }
 
 /*-----------INDEX----------*/
 /*carousel*/
@@ -8435,7 +8436,7 @@ body {
   max-width: 70%; }
   .navegacion_area .box {
     color: white;
-    background-color: #d696c3;
+    background-color: #e599fc;
     padding: 20px; }
     .navegacion_area .box img {
       max-height: 200px;
@@ -8452,16 +8453,19 @@ body {
     padding-top: 1rem; }
 
 /*---------PRODUCTOS--------*/
-#tituloproductos {
-  text-align: center;
-  padding-top: 20px; }
-
 .container {
   padding: 20px; }
 
+.card {
+  background-color: white;
+  transition: all .2s ease-in-out; }
+
+.card:hover {
+  transform: scale(1.1); }
+
 /*---------VETERINARIA--------*/
 .banner {
-  background-image: url(../Images/banner_veterinaria.jpg);
+  background-image: url(../Images/items/banner_veterinaria.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -8475,7 +8479,7 @@ body {
     top: 20%;
     right: 10%;
     color: white;
-    background-color: #d696c3;
+    background-color: #e599fc;
     padding: 20px; }
     .banner div h1, .banner div .h1 {
       color: white; }
@@ -8484,7 +8488,7 @@ body {
   max-width: 95%;
   max-height: auto;
   color: white;
-  background-color: #d696c3;
+  background-color: #e599fc;
   padding: 20px; }
   .Banner_Ofrecemos h4, .Banner_Ofrecemos .h4 {
     color: white; }
@@ -8505,8 +8509,16 @@ main #presentacion p {
   border-radius: 10px;
   max-width: 70%;
   color: white;
-  background-color: #d696c3;
+  background-color: #e599fc;
   padding: 20px; }
+
+/*--------CONTACTO-------*/
+.CajaContacto {
+  background-color: #0dd1a0;
+  color: white; }
+  .CajaContacto input {
+    color: steelgray;
+    background-color: #c7fadc; }
 
 /*media queries*/
 @media screen and (max-width: 480px) {
@@ -8524,7 +8536,7 @@ main #presentacion p {
     max-width: 100%; }
     .navegacion_area .box {
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; }
       .navegacion_area .box img {
         max-height: 200px;
@@ -8550,7 +8562,7 @@ main #presentacion p {
       width: auto;
       margin-left: 40px;
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; }
       .banner div h1, .banner div .h1 {
         color: white; }
@@ -8558,7 +8570,7 @@ main #presentacion p {
     max-width: 95%;
     max-height: auto;
     color: white;
-    background-color: #d696c3;
+    background-color: #e599fc;
     padding: 20px; }
     .Banner_Ofrecemos h4, .Banner_Ofrecemos .h4 {
       color: white; }
@@ -8577,8 +8589,14 @@ main #presentacion p {
       border-radius: 10px;
       max-width: 100%;
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; } }
+
+@media screen and (max-width: 575px) {
+  /*PRODUCTOS*/
+  #ContenedorProductos {
+    margin: 0;
+    padding: 0; } }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /*------INDEX-------*/
@@ -8587,7 +8605,7 @@ main #presentacion p {
     max-width: 70%; }
     .navegacion_area .box {
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; }
       .navegacion_area .box img {
         max-height: 200px;
@@ -8629,7 +8647,7 @@ main #presentacion p {
     border-radius: 10px;
     max-width: 100%;
     color: white;
-    background-color: #d696c3;
+    background-color: #e599fc;
     padding: 20px; } }
 
 @media only screen and (min-width: 767px) and (max-width: 1087px) {
@@ -8639,7 +8657,7 @@ main #presentacion p {
     max-width: 70%; }
     .navegacion_area .box {
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; }
       .navegacion_area .box img {
         max-height: 200px;
@@ -8655,7 +8673,7 @@ main #presentacion p {
     max-width: 70%; }
     .navegacion_area .box {
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; }
       .navegacion_area .box img {
         max-height: 200px;
@@ -8676,5 +8694,5 @@ main #presentacion p {
       border-radius: 10px;
       max-width: 90%;
       color: white;
-      background-color: #d696c3;
+      background-color: #e599fc;
       padding: 20px; } }
