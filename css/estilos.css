@@ -8594,7 +8594,7 @@ main #presentacion p {
 
 @media screen and (max-width: 575px) {
   /*PRODUCTOS*/
-  #ContenedorProductos {
+  #items {
     margin: 0;
     padding: 0; } }
 
